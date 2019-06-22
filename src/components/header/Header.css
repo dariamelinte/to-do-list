@@ -1,0 +1,14 @@
+.font{
+    font-size: 5vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 15px #eee;
+}
