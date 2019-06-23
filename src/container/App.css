@@ -1,3 +1,47 @@
 .App{
   text-align: center;
 }
+
+.item{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.item-component{
+  margin: 0 5px;
+}
+
+.task{
+  background-color: #eee;
+  width: 30vw;
+  padding: 1%;
+  border-radius: 4px;
+}
+
+.no, .yes{
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.yes{
+  background: rgb(2, 72, 2);
+}
+
+.no{
+  background-color: darkred;
+}
+
+.yes:hover{
+  background-color: rgb(45, 196, 55);
+}
+
+.no:hover{
+  background-color: rgb(196, 45, 45);
+}
+

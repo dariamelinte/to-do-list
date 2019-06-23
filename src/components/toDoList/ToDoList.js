@@ -1,0 +1,19 @@
+import React from 'react';
+import './ToDoList.css';
+
+const toDoList = (props) =>{
+    return (
+        <div className = "ToDoList">
+            <input 
+                type = "text" 
+                placeholder = "Write something" 
+                onChange = {this.changed}
+            />
+            <button 
+                className = "submit"
+                onClick = {props.clicked}> + </button>
+        </div>
+    );
+};
+
+export default toDoList;

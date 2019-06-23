@@ -1,0 +1,32 @@
+.ToDoList{
+    margin: 0 auto;
+    width: 25vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+input{
+    width: 80%;
+    height: 25%;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.submit{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: darkred;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: brown;
+}
