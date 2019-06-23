@@ -7,7 +7,7 @@ const toDoList = (props) =>{
             <input 
                 type = "text" 
                 placeholder = "Write something" 
-                onChange = {this.changed}
+                onChange = {props.changed}
             />
             <button 
                 className = "submit"

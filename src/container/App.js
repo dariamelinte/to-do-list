@@ -8,19 +8,30 @@ import Items from '../components/items/Items';
 class App extends Component  {
 
   state = {
-    item : ''
+    item : '',
+    list : []
   }
 
- changeTheText = (event) => {
+ changeTextHandler = (event) => {
    this.setState({item: event.target.value});
  }
+
+ addItemToList = () => {
+  const newItem = this.state.item;
+  const newList = [...this.state.list, newItem];
+  this.setState({list : newList});
+  this.setState({item : ''});
+  console.log(this.state.list);
+ }
+
 
   render () {
       return (
       <Aux>
         <Header />
         <ToDoList
-          changed = {this.changeTheText}/>   
+          changed = {this.changeTextHandler}
+          clicked = {this.addItemToList}/>   
         <Items 
           value = {this.state.item}
         /> 

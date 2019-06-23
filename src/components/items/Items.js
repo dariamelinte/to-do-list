@@ -1,10 +1,10 @@
 import React from 'react';
 
 const items = (props) => {
-    return (
+    return ( 
         <div className = "item">
 
-          <div className = "task item-component" onChange = {props.changed}> {props.value}</div>
+          <div className = "task item-component"> {props.value}</div>
 
 
           <button className = "yes item-component"> ✔ </button>
