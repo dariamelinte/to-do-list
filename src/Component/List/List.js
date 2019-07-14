@@ -2,14 +2,14 @@ import React from 'react';
 import Task from './Task/Task';
 
 const list = (props) => {
-    const listTasks = props.tasks;
+    const listOfTasks = props.listOfTasks;
+
     return(
-        listTasks.map( (task, index) => 
-            <Task
+        listOfTasks.map( (task, index) => (
+            <Task 
                 task = {task}
-                key = {index}
-            />
-        )
+                key = {index} />
+        ))
     );
 };
 

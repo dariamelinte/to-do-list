@@ -6,7 +6,7 @@ const task = (props) => {
         <div className = {classes.container}>
             <div
                 className = {classes.task}
-                >  {props.task} </div>
+                > {props.task} </div>
             <button 
                 className = {classes.yes}
                 > ✔ </button>

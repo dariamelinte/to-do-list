@@ -1,11 +1,11 @@
 import React from 'react';
-import classes from './Input.module.css';
+import classes from './WriteTask.module.css';
 
 const input = (props) => {
     return (
         <div className = {classes.container}>
             <input 
-                placeholder = "type your task"
+                placeholder = "please type something"
                 onChange = {props.changed}
                 value = {props.inputText}
             />

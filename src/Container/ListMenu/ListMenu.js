@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import classes from './ListMenu.module.css';
-import Input from '../../Component/Input/Input';
+import WriteTask from '../../Component/WriteTask/WriteTask';
 import List from '../../Component/List/List';
+import { thisTypeAnnotation } from '@babel/types';
 
 class ListMenu extends Component {
 
@@ -19,26 +20,27 @@ class ListMenu extends Component {
         this.setState({task});
     }
 
-    onAddClick = () => {
-        if(this.state.task.trim().length == 0)
-            alert("plese type something");
-        else
-            {
-                const newTask = this.state.task;
-                const newList = [... this.state.listOfTasks, newTask];
-                this.setState({listOfTasks : newList, task: ''});
-            }
+    onAddListener = () => {
+        const newTask = this.state.task;
+        if(newTask.trim().length == 0)
+            alert("please type something");
+        else {
+            const newList = [ ... this.state.listOfTasks, newTask];
+            this.setState({listOfTasks: newList, task: ''});
+        }
     }
+   
 
     render() {
         return ( 
             <div className = {classes.container}>
-                <Input 
+                <WriteTask 
                     changed = {this.onChangeHandler}
-                    clicked = {this.onAddClick}
-                    inputText = {this.state.task} />
+                    clicked = {this.onAddListener}
+                    inputText = {this.state.task}
+                    />
                 <List 
-                    tasks = {this.state.listOfTasks}/>
+                    listOfTasks = {this.state.listOfTasks}/>
             </div>
         );
     }
