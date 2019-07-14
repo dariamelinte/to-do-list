@@ -1,0 +1,42 @@
+.container{
+    width: 40%;
+    margin-bottom: 30px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 4px 4px 15px #eee;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.task{
+    width: 80%;
+    text-align: center;
+    padding: 2%;
+}
+
+.yes, .no {
+    border-radius: 50%;
+    color: white;
+}
+
+.yes{
+    background: #003300;
+}
+
+.no{
+    background: #800000;
+}
+
+.yes:hover{
+    background: #006600;
+    
+}
+
+.no:hover{
+    background: #b30000;
+}
+

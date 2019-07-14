@@ -1,11 +1,11 @@
-.font{
+.headerFont{
     font-size: 5vh;
     text-align: center;
     font-weight: bold;
 }
 
-.container{
-    width: 100vw;
+.header{
+    width: 100%;
     height: 10vh;
     display: flex;
     align-items: center;

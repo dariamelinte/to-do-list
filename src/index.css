@@ -7,4 +7,28 @@
   border: none;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+@keyframes gettingBigger{
+  0%{
+      width: 40px;
+      height: 40px;
+  }
+
+  100%{
+      width: 45px;
+      height: 45px;
+  }
+}
+
+button{
+  width: 40px;
+  height: 40px;
+}
+
+button:hover{
+  animation: gettingBigger .3s;
+  width: 45px;
+  height: 45px;
 }
