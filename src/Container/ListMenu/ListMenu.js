@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import classes from './ListMenu.module.css';
 import WriteTask from '../../Component/WriteTask/WriteTask';
 import List from '../../Component/List/List';
-import { thisTypeAnnotation } from '@babel/types';
 
 class ListMenu extends Component {
 
