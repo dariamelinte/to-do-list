@@ -21,12 +21,18 @@ class ListMenu extends Component {
 
     onAddListener = () => {
         const newTask = this.state.task;
-        if(newTask.trim().length == 0)
+        if(newTask.trim().length === 0)
             alert("please type something");
         else {
-            const newList = [ ... this.state.listOfTasks, newTask];
+            const newList = [ ...this.state.listOfTasks, newTask];
             this.setState({listOfTasks: newList, task: ''});
         }
+    }
+
+    onDeleteListener = (task) => {
+        const listOfTasks = this.state.listOfTasks;
+        listOfTasks.splice(task , 1);
+        this.setState({listOfTasks});
     }
    
 
@@ -39,7 +45,8 @@ class ListMenu extends Component {
                     inputText = {this.state.task}
                     />
                 <List 
-                    listOfTasks = {this.state.listOfTasks}/>
+                    listOfTasks = {this.state.listOfTasks}
+                    deleteTask = {this.onDeleteListener}/>
             </div>
         );
     }

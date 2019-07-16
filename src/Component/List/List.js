@@ -8,7 +8,9 @@ const list = (props) => {
         listOfTasks.map( (task, index) => (
             <Task 
                 task = {task}
-                key = {index} />
+                key = {index}
+                id = {index}
+                deleteTask = {props.deleteTask} />
         ))
     );
 };
