@@ -21,6 +21,7 @@
 .yes, .no {
     border-radius: 50%;
     color: white;
+    margin: 0 5px;
 }
 
 .yes{

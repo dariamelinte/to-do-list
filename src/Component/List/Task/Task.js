@@ -12,11 +12,11 @@ const task = (props) => {
             <button 
                 className = {classes.yes}
                 onClick = {() => props.deleteTask(props.id)}
-                > ✔ </button>
+                > <i className="fas fa-check"></i> </button>
             <button
                 className = {classes.no}
                 onClick = {() => props.deleteTask(props.id)}
-                > ✘ </button>
+                > <i className="fas fa-times"></i> </button>
         </div>
     );
 };
