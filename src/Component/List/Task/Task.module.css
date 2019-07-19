@@ -40,3 +40,8 @@
     background: #b30000;
 }
 
+@media screen and (max-width: 900px){
+    .container{
+        width: 80%;
+    }
+}
