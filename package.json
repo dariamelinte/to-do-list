@@ -8,7 +8,7 @@
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
-  "homepage": "https://dariamelinte/to-do-list",
+  "homepage": "https://dariamelinte.github.io/to-do-list/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
