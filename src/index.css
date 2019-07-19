@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+:root{
+  --button: 40px;
+  --button-hover: 45px;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -12,23 +17,30 @@
 
 @keyframes gettingBigger{
   0%{
-      width: 40px;
-      height: 40px;
+      width: var(--button);
+      height: var(--button);
   }
 
   100%{
-      width: 45px;
-      height: 45px;
+      width: var(--button-hover);
+      height: var(--button-hover);
   }
 }
 
 button{
-  width: 40px;
-  height: 40px;
+  width: var(--button);
+  height: var(--button);
 }
 
 button:hover{
   animation: gettingBigger .3s;
-  width: 45px;
-  height: 45px;
+  width: var(--button-hover);
+  height: var(--button-hover);
+}
+
+@media screen and (max-width: 900px){
+  :root{
+    --button: 30px;
+    --button-hover: 35px;
+  }
 }
